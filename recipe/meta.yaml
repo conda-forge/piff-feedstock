@@ -11,7 +11,7 @@ source:
 
 build:
   skip: True  # [win]
-  number: 0
+  number: 1
   # uses scripts so cannot be noarch
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -30,6 +30,7 @@ requirements:
     - matplotlib >=1.5.0
     - lsstdesc.coord >=1.0.5
     - galsim >=2.0
+    - lmfit
 
 test:
   imports:

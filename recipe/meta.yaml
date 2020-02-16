@@ -11,7 +11,7 @@ source:
 
 build:
   skip: True  # [win]
-  number: 1
+  number: 2
   # uses scripts so cannot be noarch
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -27,7 +27,7 @@ requirements:
     - treecorr >=4.0
     - fitsio >=0.9.12
     - scikit-learn >=0.18
-    - matplotlib >=1.5.0
+    - matplotlib-base >=1.5.0
     - lsstdesc.coord >=1.0.5
     - galsim >=2.0
     - lmfit

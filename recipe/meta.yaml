@@ -1,5 +1,5 @@
 {% set name = "piff" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/rmjarvis/Piff/archive/v{{ version }}.tar.gz
-  sha256: e374157abf67c346c7495f4f49608ef3829dad6a30a0f5b1afc634cbd23c18de
+  sha256: 7d2822e08e67fca5cd75f9e1c661a5b29778db13ffa68e927a0555a75718e0a7
 
 build:
-  skip: True  # [win]
-  number: 2
+  skip: true  # [win]
+  number: 0
   # uses scripts so cannot be noarch
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,7 +41,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'PSFs In the Full FOV'
+  summary: PSFs In the Full FOV
   doc_url: http://rmjarvis.github.io/Piff/html
 
 extra:

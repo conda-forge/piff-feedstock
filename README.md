@@ -5,7 +5,7 @@ Home: https://github.com/rmjarvis/Piff
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: PSFs In the Full FOV
 

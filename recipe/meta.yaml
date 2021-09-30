@@ -35,8 +35,12 @@ requirements:
     - treegp >=0.6
 
 test:
+  requires:
+    - pip
   imports:
     - piff
+  commands:
+    - pip check
 
 about:
   home: https://github.com/rmjarvis/Piff

@@ -1,5 +1,5 @@
 {% set name = "piff" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rmjarvis/Piff/archive/v{{ version }}.tar.gz
-  sha256: 3d8160d2b12ccdcf9404caadfa078d846d67b0a38347d20189833d5087c0b5b5
+  sha256: 7d75d7f3573138fa5d0f678564fc99f8569daabb9cde65e65aab5f58d21cf8a6
 
 build:
   skip: true  # [win]

@@ -1,11 +1,11 @@
-About piff
-==========
+About piff-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/piff-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rmjarvis/Piff
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/piff-feedstock/blob/main/LICENSE.txt)
 
 Summary: PSFs In the Full FOV
 

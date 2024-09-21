@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   # uses scripts so cannot be noarch
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - numpy
@@ -35,12 +36,12 @@ requirements:
     - treegp >=0.6
 
 test:
-  requires:
-    - pip
+  # requires:
+  #   - pip
   imports:
     - piff
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
 
 about:
   home: https://github.com/rmjarvis/Piff

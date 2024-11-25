@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/rmjarvis/Piff/archive/v{{ version }}.tar.gz
   sha256: 1754c7fdffee672110a3b5789ad2b64a12a90bd707d96a00fb7b0cd650502417
+  patches:
+    - cxx-patch.patch
 
 build:
   skip: true  # [win]

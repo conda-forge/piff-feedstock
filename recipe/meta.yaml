@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   # uses scripts so cannot be noarch
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -51,8 +51,11 @@ test:
   #   - pip
   imports:
     - piff
-  # commands:
-  #   - pip check
+  commands:
+    - piffify --help
+    - plotify --help
+    - meanify --help
+    # - pip check
 
 about:
   home: https://github.com/rmjarvis/Piff

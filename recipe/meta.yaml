@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/rmjarvis/Piff/archive/v{{ version }}.tar.gz
   sha256: 61f917273ae07ac62a975dc6be51659f9128c6c10fd97aaadb144a5e589512db
-  patches:
-    - build_ext.patch
 
 build:
   skip: true  # [win]
